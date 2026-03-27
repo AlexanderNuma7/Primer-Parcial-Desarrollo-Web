@@ -1,0 +1,114 @@
+[
+  {
+    "id": "h2r",
+    "motor": "998cc Supercargado",
+    "potencia": "310 HP",
+    "velocidad": "400 km/h",
+    "tipo": "Hiperdeportiva",
+    "precio": "$150.000.000COP"
+  },
+  {
+    "id": "mt09",
+    "motor": "890cc 3 cilindros",
+    "potencia": "119 HP",
+    "velocidad": "230 km/h",
+    "tipo": "Naked Deportiva",
+    "precio": "$62.000.000COP"
+  },
+  {
+    "id": "s1000",
+    "motor": "999cc 4 cilindros",
+    "potencia": "207 HP",
+    "velocidad": "303 km/h",
+    "tipo": "SuperSport",
+    "precio": "$110.000.000COP"
+  },
+  {
+    "id": "panigale",
+    "motor": "1103cc V4",
+    "potencia": "214 HP",
+    "velocidad": "300+ km/h",
+    "tipo": "Superbike",
+    "precio": "$140.000.000COP"
+  },
+  {
+    "id": "gsx1000",
+    "motor": "999cc 4 cilindros",
+    "potencia": "199 HP",
+    "velocidad": "300 km/h",
+    "tipo": "Superbike",
+    "precio": "$90.000.000COP"
+  },
+  {
+    "id": "ktm1290",
+    "motor": "1301cc V-Twin",
+    "potencia": "180 HP",
+    "velocidad": "280 km/h",
+    "tipo": "Hyper Naked",
+    "precio": "$115.000.000COP"
+  },
+  {
+    "id": "r7",
+    "motor": "689cc CP2",
+    "potencia": "73 HP",
+    "velocidad": "220 km/h",
+    "tipo": "Sportbike",
+    "precio": "$48.000.000COP"
+  },
+  {
+    "id": "z1000",
+    "motor": "1043cc 4 cilindros",
+    "potencia": "142 HP",
+    "velocidad": "250 km/h",
+    "tipo": "Naked Deportiva",
+    "precio": "$75.000.000COP"
+  },
+  {
+    "id": "streetfighter",
+    "motor": "1103cc V4",
+    "potencia": "208 HP",
+    "velocidad": "300+ km/h",
+    "tipo": "Hypernaked",
+    "precio": "$130.000.000COP"
+  },
+  {
+    "id": "zx14r",
+    "motor": "1441cc",
+    "potencia": "207 HP",
+    "velocidad": "299 km/h",
+    "tipo": "Sport Touring",
+    "precio": "$110.000.000COP"
+  },
+  {
+    "id": "hayabusa",
+    "motor": "1340cc",
+    "potencia": "187 HP",
+    "velocidad": "299+ km/h",
+    "tipo": "Sport",
+    "precio": "$115.000.000COP"
+  },
+  {
+    "id": "cbr",
+    "motor": "1000cc",
+    "potencia": "215 HP",
+    "velocidad": "299 km/h",
+    "tipo": "Superbike",
+    "precio": "$140.000.000COP"
+  },
+  {
+    "id": "m1000rr",
+    "motor": "999cc",
+    "potencia": "212 HP",
+    "velocidad": "306 km/h",
+    "tipo": "Superbike",
+    "precio": "$170.000.000COP"
+  },
+  {
+    "id": "rsv4",
+    "motor": "1099cc V4",
+    "potencia": "217 HP",
+    "velocidad": "305 km/h",
+    "tipo": "Superbike",
+    "precio": "$155.000.000COP"
+  }
+]

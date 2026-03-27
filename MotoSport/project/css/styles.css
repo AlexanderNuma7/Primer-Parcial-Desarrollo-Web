@@ -1,0 +1,694 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* VARIABLES */
+:root {
+    --rojo: #e63946;
+    --negro: #000;
+    --blanco: #fff;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background: black;
+    z-index: 100;
+}
+
+.social-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* tamaño correcto */
+.social-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+/* efecto pro  */
+.social-container img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 6px red);
+}
+
+.social-container a {
+    font-size: 22px;
+    margin: 5px;
+}
+
+.fa-facebook { color: #1877f2; }
+.fa-instagram { color: #9900ff; }
+.fa-tiktok { color: #ffffff; }
+.fa-youtube { color: #ff0000; }
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: var(--rojo);
+}
+
+/* BOTÓN */
+.btn_quote {
+    padding: 8px 20px;
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    color: white;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.btn_quote:hover {
+    background: var(--rojo);
+}
+
+/* REDES */
+.social-container {
+    position: absolute;
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    display: flex;
+    gap: 10px;
+}
+
+/* PORTADA */
+.container__cover {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background: black;
+    color: white;
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+/* TEXTO */
+.text__cover {
+    width: 100%;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* BOTÓN TEXTO */
+.btn__text {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--rojo);
+    color: white;
+    border-radius: 8px;
+}
+
+/* IMAGEN */
+.image__cover img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* GALERÍA */
+.container_projects {
+    padding: 80px 20px;
+    background: #f3f3f3;
+    margin-top: 50px;
+}
+
+.container_projects h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* TARJETAS */
+.moto {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.moto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.moto img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* INFO MOTO (MUY IMPORTANTE 🔥) */
+.infoMoto {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+}
+
+/* CONTACTO */
+.contact-form {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+}
+
+.contact-form button {
+    background: var(--rojo);
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+
+
+/* ANIMACIÓN DE APARICIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* INFO MOTO PRO */
+.infoMoto {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* CUANDO SE ACTIVA */
+.infoMoto.activa {
+    opacity: 1;
+    transform: translateY(0);
+    animation: aparecer 0.4s ease;
+}
+
+/* TARJETAS MÁS PRO */
+.moto {
+    width: 200px;
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFECTO HOVER PRO */
+.moto:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* BRILLO AL PASAR */
+.moto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+}
+
+.moto:hover::before {
+    left: 100%;
+}
+
+/* SECCIÓN CONTACTO CENTRADA */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ocupa toda la pantalla */
+    background: #000;
+}
+
+/* CONTENEDOR */
+#contact .cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORMULARIO GRANDE */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    background: #111;
+    box-shadow: 0 0 25px rgba(230,57,70,0.5);
+    text-align: center;
+}
+
+/* TÍTULO */
+.contact-form h2 {
+    color: var(--rojo);
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* INPUTS MÁS GRANDES */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* BOTÓN MÁS PRO */
+.contact-form button {
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+}
+
+/* INICIO PRO */
+.container__cover {
+    padding-top: 150px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #000 60%, #111);
+    display: flex;
+    align-items: center;
+}
+
+/* CONTENIDO */
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* TEXTO */
+.text__cover {
+    width: 50%;
+    animation: fadeInLeft 1s ease;
+}
+
+.text__cover h1 {
+    font-size: 50px;
+    color: var(--rojo);
+    text-shadow: 0 0 10px rgba(230,57,70,0.7);
+}
+
+.text__cover p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* BOTÓN PRO */
+.btn__text {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: var(--rojo);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn__text:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--rojo);
+}
+
+/* IMAGEN */
+.image__cover {
+    width: 50%;
+    animation: fadeInRight 1s ease;
+}
+
+.image__cover img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255,0,0,0.4);
+    transition: 0.4s;
+}
+
+.image__cover img:hover {
+    transform: scale(1.05);
+}
+
+/* ANIMACIONES */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== INICIO NIVEL DIOS ===== */
+
+.container__cover {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* FONDO CON IMAGEN */
+.container__cover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/inicio.jpg") center/cover no-repeat;
+    filter: brightness(0.3) blur(3px);
+    z-index: 0;
+}
+
+/* CAPA OSCURA */
+.container__cover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+    z-index: 1;
+}
+
+/* CONTENIDO */
+.cover {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* TEXTO */
+.text__cover h1 {
+    font-size: 60px;
+    color: #e63946;
+    text-shadow: 0 0 20px rgba(230,57,70,0.8);
+    animation: fadeUp 1s ease;
+}
+
+.text__cover p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ddd;
+    animation: fadeUp 1.3s ease;
+}
+
+/* BOTÓN */
+.btn__text {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #e63946;
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.4s;
+    animation: fadeUp 1.6s ease;
+}
+
+.btn__text:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #e63946;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* VIDEO FONDO */
+.video-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* OSCURECER VIDEO */
+.container__cover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+header {
+    background: transparent;
+    transition: 0.3s;
+}
+
+header.scrolled {
+    background: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.carrito {
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    width: 300px;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(230,57,70,0.5);
+}
+
+.carrito ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.carrito li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.carrito button {
+    width: 100%;
+    padding: 10px;
+    background: #e63946;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#noti {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e63946;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.moto {
+    transition: 0.3s;
+}
+
+.moto:active {
+    transform: scale(0.9);
+}
+
+.carrito {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.carrito li button {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.container_header {
+    position: relative; 
+}
+
+header {
+    backdrop-filter: blur(10px); 
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.text__cover h1 {
+    text-shadow: 0 0 20px red, 0 0 40px red;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* redes a la derecha sin salirse */
+.social-container {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.social-container a img {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+/* efecto hover por red 🔥 */
+.social-container a:hover img {
+    transform: scale(1.2);
+}
+
+/* colores glow por marca */
+.social-container a:nth-child(1):hover img {
+    filter: drop-shadow(0 0 6px #1877f2); /* Facebook */
+}
+
+.social-container a:nth-child(2):hover img {
+    filter: drop-shadow(0 0 6px #e1306c); /* Instagram */
+}
+
+.social-container a:nth-child(3):hover img {
+    filter: drop-shadow(0 0 6px #000000); /* TikTok */
+}
+
+.social-container a:nth-child(4):hover img {
+    filter: drop-shadow(0 0 6px #ff0000); /* YouTube */
+}

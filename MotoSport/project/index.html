@@ -1,0 +1,290 @@
+<form id="loginForm"></form>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOSPORT</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<div id="loader">
+    <h1>MOTOSPORT</h1>
+</div>
+<div id="noti"></div>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container_header">
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#cover">Inicio</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+ <!-- REDES -->
+      <div class="social-container">
+    <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://tiktok.com" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+
+    </div>
+</header>
+
+ 
+
+<!-- MAIN -->
+<main>
+
+<!-- PORTADA -->
+<section class="container__cover" id="cover">
+
+    <!-- VIDEO -->
+    <video autoplay muted loop class="video-bg">
+        <source src="video/moto.mp4" type="video/mp4">
+    </video>
+
+    <div class="cover">
+        <div class="text__cover">
+            <h1>SUPERBIKES SPORT</h1>
+            <p>Velocidad, Poder, Adrenalina.</p>
+            <a href="#gallery" class="btn__text">Explorar</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- GALERÍA -->
+<section class="container_projects" id="gallery">
+    <h1>Galería de Motos</h1>
+
+    <div class="galeria">
+
+        <div class="moto" id="ktm1290">
+            <img src="img/ktm1290.jpg">
+            <p>KTM 1290</p>
+
+            <button onclick="mostrarMoto('ktm1290')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('KTM 1290')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="mt09">
+            <img src="img/MT-09.jpg">
+            <p>MT-09</p>
+
+            <button onclick="mostrarMoto('mt09')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('MT-09')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="h2r">
+            <img src="img/H2R.jpg">
+            <p>Kawasaki H2R</p>
+
+            <button onclick="mostrarMoto('h2r')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Kawasaki H2R')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="streetfighter">
+            <img src="img/streetfighter.jpg">
+            <p>Ducati Streetfighter V4</p>
+
+            <button onclick="mostrarMoto('streetfighter')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Ducati Streetfighter V4')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="z1000">
+            <img src="img/z1000.jpg">
+            <p>Kawasaki Z1000</p>
+
+            <button onclick="mostrarMoto('z1000')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Kawasaki Z1000')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="m1000rr">
+            <img src="img/m1000rr.jpg">
+            <p>BMW M1000 RR</p>
+
+            <button onclick="mostrarMoto('m1000rr')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('BMW M1000 RR')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="s1000">
+            <img src="img/1000RR.jpg">
+            <p>BMW S1000RR</p>
+
+            <button onclick="mostrarMoto('s1000')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('BMW S1000RR')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="panigale">
+            <img src="img/panigale.jpg">
+            <p>Ducati Panigale V4</p>
+
+            <button onclick="mostrarMoto('panigale')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Ducati Panigale V4')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="gsx1000">
+            <img src="img/gsx1000.jpg">
+            <p>Suzuki GSX-R1000</p>
+
+            <button onclick="mostrarMoto('gsx1000')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Suzuki GSX-R1000')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="r7">
+            <img src="img/r7.jpg">
+            <p>Yamaha YZF-R7</p>
+
+            <button onclick="mostrarMoto('r7')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Yamaha R7')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="cbr">
+            <img src="img/cbr.jpg">
+            <p>Honda CBR1000RR-R Fireblade</p>
+
+            <button onclick="mostrarMoto('cbr')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Honda CBR1000RR-R Fireblade')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="rsv4">
+            <img src="img/rsv4.jpg">
+            <p>Aprilia RSV4 1100 Factory</p>
+
+            <button onclick="mostrarMoto('rsv4')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Aprilia RSV4 1100 Factory')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="hayabusa">
+            <img src="img/hayabusa.jpg">
+            <p>Suzuki Hayabusa 1340</p>
+
+            <button onclick="mostrarMoto('hayabusa')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Suzuki Hayabusa 1340')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+        <div class="moto" id="zx14r">
+            <img src="img/zx14r.jpg">
+            <p>Kawasaki Ninja ZX-14R</p>
+
+            <button onclick="mostrarMoto('zx14r')">Ver info</button>
+            <div class="infoMoto"></div>
+
+            <button onclick="comprarMoto('Kawasaki Ninja ZX-14R')" class="btn_comprar">
+                💬 Consultar
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACTO -->
+<section class="container__cover" id="contact">
+    <div class="cover">
+
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <input type="number" placeholder="Celular">
+
+            <select>
+                <option>Petición</option>
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+            </select>
+
+            <textarea rows="5" placeholder="Mensaje"></textarea>
+
+            <button>Enviar</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Created by: Alexander Numa y Breyner Jaime</p>
+</footer>
+<div id="noti"></div>
+
+<!-- JS FINAL -->
+<script src="/MotoSport/project/js/main.js"></script>
+
+</body>
+</html>
