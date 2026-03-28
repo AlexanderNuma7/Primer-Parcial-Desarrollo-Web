@@ -21,4 +21,8 @@ loginForm.addEventListener("submit", function(event) {
     } else {
         errorMsg.textContent = "Usuario o contrasena incorrectos.";
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 4e1f7b06e6e4c12f1c7833fabef1cdfaacba6779
